@@ -7,6 +7,8 @@ RUN sudo apt-get -y update  &&\
   echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' | sudo tee /etc/apt/sources.list.d/dart_stable.list &&\
   sudo apt-get -y update &&\
   sudo apt-get -y install dart lcov &&\
+  sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -qO /usr/bin/yq &&\
+  sudo chmod +x /usr/bin/yq &&\
   sudo -u vscode dart --disable-analytics &&\
   sudo -u vscode dart pub global activate melos
 
