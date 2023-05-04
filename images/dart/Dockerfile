@@ -7,8 +7,6 @@ RUN sudo apt-get -y update  &&\
   sudo apt-get -y install lcov &&\
   /tmp/install/dart.sh &&\
   /tmp/install/yq.sh &&\
-  rm -rf /tmp/install &&\
-  sudo -u vscode /opt/dart-sdk/bin/dart --disable-analytics &&\
-  sudo -u vscode /opt/dart-sdk/bin/dart pub global activate melos
+  rm -rf /tmp/install
 
 ENV PATH="/home/vscode/.pub-cache/bin:/opt/dart-sdk/bin:$PATH"
