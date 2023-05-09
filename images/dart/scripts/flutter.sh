@@ -8,3 +8,4 @@ git clone https://github.com/flutter/flutter.git -b stable /home/vscode/flutter
 
 /home/vscode/flutter/bin/dart --disable-analytics
 /home/vscode/flutter/bin/dart pub global activate melos
+/home/vscode/flutter/bin/dart pub global activate cider

@@ -30,3 +30,4 @@ rm -f /tmp/dartsdk.zip
 
 sudo -u vscode /opt/dart-sdk/bin/dart --disable-analytics
 sudo -u vscode /opt/dart-sdk/bin/dart pub global activate melos
+sudo -u vscode /opt/dart-sdk/bin/dart pub global activate cider
