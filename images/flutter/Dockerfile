@@ -6,6 +6,7 @@ RUN sudo apt-get -y update &&\
   sudo apt-get -y upgrade &&\
   sudo apt-get -y install clang cmake ninja-build pkg-config libgtk-3-dev chromium lcov &&\
   /tmp/install/yq.sh &&\
+  /tmp/install/osv-scanner.sh &&\
   sudo -u vscode /tmp/install/flutter.sh &&\
   rm -rf /tmp/install
 
