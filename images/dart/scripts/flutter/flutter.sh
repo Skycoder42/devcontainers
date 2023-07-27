@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eo pipefail
 
-/tmp/scripts/common/pre.sh clang cmake ninja-build pkg-config libgtk-3-dev chromium
+/tmp/scripts/common/pre.sh clang cmake ninja-build pkg-config libgtk-3-dev chromium xvfb
 mv /tmp/scripts/flutter/google-chrome.sh /usr/local/bin/google-chrome
 
 sudo -u vscode /tmp/scripts/flutter/flutter.install.sh
