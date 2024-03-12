@@ -7,7 +7,7 @@ osv_scanner_platform=$(echo "$TARGETPLATFORM" | cut -d/ -f2)
 echo "Detected osv-scanner platform for $TARGETPLATFORM as: $osv_scanner_platform"
 
 wget \
-  "https://github.com/google/osv-scanner/releases/download/v$osv_scanner_version/osv-scanner_${osv_scanner_version}_linux_$osv_scanner_platform" \
+  "https://github.com/google/osv-scanner/releases/download/v$osv_scanner_version/osv-scanner_linux_$osv_scanner_platform" \
   -O /tmp/osv-scanner
 chmod a+x /tmp/osv-scanner
 sudo mv /tmp/osv-scanner /usr/local/bin/osv-scanner
