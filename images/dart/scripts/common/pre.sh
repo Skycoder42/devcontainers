@@ -9,4 +9,4 @@ sudo apt-get -y install lcov nano "$@"
 
 /tmp/scripts/common/yq.install.sh
 
-/tmp/scripts/common/osv-scanner.install.sh
+# /tmp/scripts/common/osv-scanner.install.sh
